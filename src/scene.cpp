@@ -9,12 +9,12 @@
 #include "scene_ending.h"
 
 // test games
-#include "scene_racing.h"
-#include "scene_tilemap.h"
-#include "scene_test_sprite.h"
-#include "scene_test_fluid.h"
-#include "scene_test_dungeon.h"
-#include "scene_test_iso.h"
+//#include "scene_racing.h"
+//#include "scene_tilemap.h"
+//#include "scene_test_sprite.h"
+//#include "scene_test_fluid.h"
+//#include "scene_test_dungeon.h"
+//#include "scene_test_iso.h"
 // *****************************************************************************
 // グローバル変数
 // *****************************************************************************
@@ -48,24 +48,6 @@ void initScene(void) {
         // リザルト画面の初期化
         scene_ending_init();
         break;
-
-        // tests
-    case SCENE_TEST_RACING:
-        scene_racing_init();
-        break;
-    case SCENE_TEST_TILEMAP:
-        scene_tilemap_init();
-        break;
-    case SCENE_TEST_SPRITE:
-        scene_test_sprite_init();
-        break;
-    case SCENE_TEST_FLUID:
-        scene_test_fluid_init();
-        break;
-    case SCENE_TEST_DUNGEON:
-        scene_test_dungeon_init();
-    case SCENE_TEST_ISO:
-        scene_test_iso_init();
     }
 }
 
@@ -107,26 +89,6 @@ void updateScene(float deltaTime) {
         // リザルト画面の更新処理
         scene_ending_update();
         break;
-
-        // tests
-    case SCENE_TEST_RACING:
-        scene_racing_update(deltaTime);
-        break;
-    case SCENE_TEST_TILEMAP:
-        scene_tilemap_update(deltaTime);
-        break;
-    case SCENE_TEST_SPRITE:
-        scene_test_sprite_update(deltaTime);
-        break;
-    case SCENE_TEST_FLUID:
-        scene_test_fluid_update(deltaTime);
-        break;
-    case SCENE_TEST_DUNGEON:
-        scene_test_dungeon_update(deltaTime);
-        break;
-    case SCENE_TEST_ISO:
-        scene_test_iso_update(deltaTime);
-        break;
     }
 }
 
@@ -144,26 +106,6 @@ void drawScene(void) {
     case SCENE_ENDING:
         // リザルト画面の描画処理
         scene_ending_draw();
-        break;
-
-        // tests
-    case SCENE_TEST_RACING:
-        scene_racing_draw();
-        break;
-    case SCENE_TEST_TILEMAP:
-        scene_tilemap_draw();
-        break;
-    case SCENE_TEST_SPRITE:
-        scene_test_sprite_draw();
-        break;
-    case SCENE_TEST_FLUID:
-        scene_test_fluid_draw();
-        break;
-    case SCENE_TEST_DUNGEON:
-        scene_test_dungeon_draw();
-        break;
-    case SCENE_TEST_ISO:
-        scene_test_iso_draw();
         break;
     }
 }

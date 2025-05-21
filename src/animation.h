@@ -2,7 +2,7 @@
 #include "timer.h"
 #include "color.h"
 #include "draw.h"
-void draw_animation_test() {
+inline void draw_animation_test() {
     int frames = 4;
     Color colors[] = {
         create_color(255, 255, 255),

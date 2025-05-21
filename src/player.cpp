@@ -1,6 +1,5 @@
 #include "player.h"
 #include "vec.h"
-#include "inputkey.h"
 #include "timer.h"
 #include "input.h"
 #include "scene_game.h"

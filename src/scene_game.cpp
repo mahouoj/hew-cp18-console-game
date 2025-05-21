@@ -1,11 +1,6 @@
 #pragma once
-//#define CONIOEX
-//#include "conioex.h"
-// key
-#include "inputkey.h"
 // world
 #include "world.h"
-//#include "world_view_iso.h"
 #include "world_view.h"
 
 #include "stage.h"
